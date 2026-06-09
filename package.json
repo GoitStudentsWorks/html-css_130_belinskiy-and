@@ -1,11 +1,11 @@
 {
-  "name": "devcore_html-css_team_project",
+  "name": "devcore-html-css-team-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/devcore_html-css_team_project/",
+    "build": "vite build --base=/devcore-html-css-team-projectt/",
     "preview": "vite preview"
   },
   "devDependencies": {
