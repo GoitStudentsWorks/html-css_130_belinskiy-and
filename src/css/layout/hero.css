@@ -1,11 +1,115 @@
 /* Styles for Mobile devices */
 .hero-section {
+  display: block;
+  padding-top: 183px;
+  padding-bottom: 183px;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/hero/hero-mob-bg@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 2x) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/hero/hero-mob-bg@2x.jpg);
+  }
+}
+
+.hero-main-title {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 16px;
+}
+
+.hero-link {
+  display: block;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #010400;
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: var(--link-white-color);
+
+  padding-top: 8px;
+  padding-bottom: 4px;
+  text-align: center;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 234px;
+    padding-bottom: 234px;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/hero/hero-tab-bg@1x.jpg);
+  }
+
+  .hero-subtitle {
+    max-width: 611px;
+  }
+
+  .hero-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 82px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/hero/hero-tab-bg@2x.jpg);
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+  .hero-section {
+    padding-top: 326px;
+    padding-bottom: 326px;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/hero/hero-desk-bg@1x.jpg);
+  }
+
+  .hero-main-title {
+    max-width: 646px;
+  }
+
+  .hero-subtitle {
+    max-width: 646px;
+  }
+
+  .hero-link {
+    text-align: center;
+    padding: 6px 54px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 2x) {
+  .hero-section {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/hero/hero-desk-bg@2x.jpg);
+  }
 }
