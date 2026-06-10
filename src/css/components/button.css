@@ -1,0 +1,82 @@
+/* Styles for Mobile devices */
+.button {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--button-primary-text-color);
+
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: var(--button-primary-color);
+
+  transition:
+    color var(--transition-function),
+    background-color var(--transition-function),
+    border-color var(--transition-function),
+    box-shadow var(--transition-function);
+}
+
+.button:not(:disabled):hover,
+.button:not(:disabled):focus {
+  color: var(--button-primary-hover-text-color);
+  background-color: var(--button-primary-hover-color);
+}
+
+.button:not(:disabled):active {
+  color: var(--button-primary-hover-text-color);
+  background-color: var(--button-primary-hover-color);
+  border-color: var(--button-primary-active-border-color);
+  box-shadow: inset 2px 7px 27px -4px rgba(0, 0, 0, 0.15);
+}
+
+.button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.button.transparent {
+  color: var(--button-transparent-text-color);
+  border: 1px solid var(--button-transparent-border-color);
+  background-color: var(--button-transparent-color);
+}
+
+.button.transparent:not(:disabled):hover,
+.button.transparent:not(:disabled):focus {
+  color: var(--button-transparent-hover-text-color);
+  background-color: var(--button-transparent-hover-color);
+}
+
+.button.transparent:not(:disabled):active {
+  color: var(--button-transparent-hover-text-color);
+  background-color: var(--button-transparent-hover-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.button.white {
+  color: var(--button-white-text-color);
+  background-color: var(--button-white-color);
+}
+
+.button.white:not(:disabled):hover,
+.button.white:not(:disabled):focus {
+  color: var(--button-white-hover-text-color);
+  background-color: var(--button-white-hover-color);
+}
+
+.button.white:not(:disabled):active {
+  color: var(--button-white-hover-text-color);
+  background-color: var(--button-white-hover-color);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .button {
+    padding: 6px 12px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+}
