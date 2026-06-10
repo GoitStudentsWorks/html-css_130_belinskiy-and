@@ -1,7 +1,22 @@
 :root {
-  /* Main colors */
+  /* Fonts */
+  --main-font-family: 'Public Sans', sans-serif;
+  --secondary-font-family: 'Chivo', sans-serif;
+
+  /* Text colors */
   --main-text-color: #010400;
-  --main-background-color: #e8eee5;
+  --secondary-text-color: #ffffff;
+
+  --primary-title-color: #010400;
+  --secondary-title-color: #ffffff;
+
+  /* Background colors */
+  --first-background-color: #e8eee5;
+  --second-background-color: #1a5901;
+  --third-background-color: #d1ddcc;
+  --four-background-color: #5e8a4d;
+  --header-background-color: #5e8a4d;
+  --footer-background-color: #0a2300;
 
   /* Primary link color */
   --link-primary-color: #010400;
