@@ -39,6 +39,12 @@
 .burger-button-icon {
   width: 32px;
   height: 32px;
+
+  transition: opacity var(--transition-function);
+}
+
+.burger-button-icon.hide {
+  opacity: 0;
 }
 
 /* Styles for Tablet devices */

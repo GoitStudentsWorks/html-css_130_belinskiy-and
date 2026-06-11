@@ -1,11 +1,10 @@
-const openBtn = document.getElementById('burger-button');
-const closeBtn = document.getElementById('close-button');
+const burgerBtn = document.getElementById('burger-button');
 const mobileMenu = document.getElementById('mobile-menu');
+const openIcon = document.getElementById('mobile-menu-open-icon');
+const closeIcon = document.getElementById('mobile-menu-close-icon');
 
-openBtn.addEventListener('click', () => {
-  mobileMenu.classList.add('is-open');
-});
-
-closeBtn.addEventListener('click', () => {
-  mobileMenu.classList.remove('is-open');
+burgerBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('is-open');
+  openIcon.classList.toggle('hide');
+  closeIcon.classList.toggle('hide');
 });
