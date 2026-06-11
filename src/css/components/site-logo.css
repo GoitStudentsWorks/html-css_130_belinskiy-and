@@ -2,7 +2,7 @@
   display: block;
   width: 142px;
   height: 60px;
-  fill: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .site-logo-icon {
