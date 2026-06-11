@@ -12,6 +12,7 @@
 @import url('./base/container.css');
 
 /* Components styles */
+@import url('./components/site-logo.css');
 @import url('./components/section-title.css');
 @import url('./components/button.css');
 @import url('./components/form.css');
