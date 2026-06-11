@@ -1,6 +1,55 @@
 /* Styles for Mobile devices */
 .assorts-section {
+    background-color: #D1DDCC;
+    padding:64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.assorts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.assorts-section-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #010400;
+}
+
+.assorts-section-title {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #010400;
+    margin-bottom: 24px;
+}
+.assorts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.assorts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.assorts-item-title {
+    font-size: 18px;
+    line-height: 28px;
+    color: #010400;
+}
+
+.assorts-item-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #010400;
+}
+
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
