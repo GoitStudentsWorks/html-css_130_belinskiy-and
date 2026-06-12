@@ -131,8 +131,13 @@
     background-color: var(--header-background-color);
   }
 
+  .mobile-menu-nav-list {
+    margin-bottom: 12px;
+  }
+
   .mobile-menu-nav-link {
     text-align: right;
+    padding: 12px 0;
   }
 }
 
