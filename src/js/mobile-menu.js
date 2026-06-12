@@ -1,10 +1,18 @@
 const burgerBtn = document.getElementById('burger-button');
+const closeBtn = document.getElementById('close-button');
 const mobileMenu = document.getElementById('mobile-menu');
-const openIcon = document.getElementById('mobile-menu-open-icon');
-const closeIcon = document.getElementById('mobile-menu-close-icon');
+const mobileMenuLinks = document.querySelectorAll('.mobile-link');
 
 burgerBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('is-open');
-  openIcon.classList.toggle('hide');
-  closeIcon.classList.toggle('hide');
+  mobileMenu.classList.add('is-open');
+});
+
+closeBtn.addEventListener('click', () => {
+  mobileMenu.classList.remove('is-open');
+});
+
+mobileMenuLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+  });
 });
