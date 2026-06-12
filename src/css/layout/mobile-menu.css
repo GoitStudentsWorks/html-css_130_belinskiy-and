@@ -13,7 +13,9 @@
   pointer-events: none;
   visibility: hidden;
 
-  transition: opacity var(--transition-function);
+  transition:
+    opacity var(--transition-function),
+    visibility var(--transition-function);
 }
 
 .mobile-menu-wrapper.is-open {
@@ -103,7 +105,9 @@
     padding: 0 32px;
 
     transform: translateX(100%);
-    transition: transform var(--transition-function);
+    transition:
+      transform var(--transition-function),
+      visibility var(--transition-function);
   }
 
   .mobile-menu-wrapper.is-open .mobile-menu-nav {
