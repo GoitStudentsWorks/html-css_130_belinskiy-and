@@ -1,6 +1,6 @@
 /* Styles for Mobile devices */
 .mission-section {
-    background-color:#5E8A4D;
+    background-color: var(--four-background-color)
 }
 
 .mission-container {
@@ -24,6 +24,7 @@
     color: var(--secondary-text-color);
 }
 
+/* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
 
 .mission-text-block {
@@ -41,6 +42,5 @@
 .mission-container {
     display: flex;
     flex-direction:column;
-    gap: 80px;
-}
+    gap: 80px;}
 }
