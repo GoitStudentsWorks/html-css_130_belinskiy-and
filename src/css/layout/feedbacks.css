@@ -1,10 +1,10 @@
 /* Styles for Mobile devices */
 
-.section-title {
+.feedbacks-title {
   text-align: center;
 }
 
-.feedbacks-section .section-heading:not(:last-child) {
+.feedbacks-section .feedbacks-heading:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -61,7 +61,7 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .feedbacks-section .section-heading:not(:last-child) {
+  .feedbacks-section .feedbacks-heading:not(:last-child) {
     margin-bottom: 24px;
   }
 
@@ -69,7 +69,7 @@
     margin-bottom: 0;
   }
 
-  .section-title {
+  .feedbacks-title {
     width: 644px;
     margin: 0 auto;
   }
