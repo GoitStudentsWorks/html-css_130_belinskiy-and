@@ -1,5 +1,6 @@
 /* Styles for Mobile devices */
 .header {
+  position: relative;
   padding: 6px 0;
   background-color: var(--header-background-color);
 }
@@ -27,6 +28,9 @@
 }
 
 .burger-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
   padding: 0;
@@ -39,6 +43,12 @@
 .burger-button-icon {
   width: 32px;
   height: 32px;
+
+  transition: opacity var(--transition-function);
+}
+
+.burger-button-icon.hide {
+  opacity: 0;
 }
 
 /* Styles for Tablet devices */
