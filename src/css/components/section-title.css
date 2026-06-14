@@ -34,7 +34,7 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .section-header {
+  .section-heading {
     font-size: 48px;
   }
 }

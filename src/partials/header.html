@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header-content">
       <div class="site-logo">
-        <a href="/" class="site-logo-link">
+        <a href="index.html" class="site-logo-link">
           <svg class="site-logo-icon" width="142" height="60">
             <use href="/img/site-logo.svg"></use>
           </svg>
@@ -12,7 +12,7 @@
         <nav class="site-nav">
           <ul class="site-nav-list">
             <li class="site-nav-item">
-              <a href="/" class="link white site-nav-link">Home</a>
+              <a href="index.html" class="link white site-nav-link">Home</a>
             </li>
             <li class="site-nav-item">
               <a href="#mission" class="link white site-nav-link">Mission</a>
@@ -39,7 +39,15 @@
         <a href="#contacts" class="button header-button">Order</a>
         <button class="burger-button" type="button" id="burger-button">
           <svg class="burger-button-icon" width="32" height="32">
-            <use href="/img/sprite.svg#icon-burger-button"></use>
+            <use
+              id="mobile-menu-open-icon"
+              href="/img/sprite.svg#icon-burger-button "
+            ></use>
+            <!-- <use
+              class="burger-button-icon hide"
+              id="mobile-menu-close-icon"
+              href="/img/sprite.svg#icon-close"
+            ></use> -->
           </svg>
         </button>
       </div>

@@ -1,7 +1,11 @@
-.site-logo-link {
-  display: block;
+.site-logo {
   width: 142px;
   height: 60px;
+}
+
+.site-logo-link {
+  display: block;
+  height: 100%;
   color: var(--secondary-text-color);
 }
 
