@@ -1,11 +1,62 @@
 /* Styles for Mobile devices */
-.contacts-section {
+.contacts-container {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.contacts-pretitle {
+    margin-bottom: 16px;
+}
+
+.contacts-title {
+    margin-bottom: 24px;
+}
+
+.contacts-subtitle {
+    margin-bottom: 32px;
+}
+
+.contacts-address {
+    margin-top: 32px;
+    padding: 8px 0;
+}
+
+.contacts-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  
+}
+
+.contacts-address-item {
+    display: flex;
+    gap: 8px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;   
+    font-style: normal;
+    align-items: center;    
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+    .contacts-container {
+            flex-direction: column;
+        }
+    
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+    .contacts-container {
+        flex-direction: row;
+    }
+    .contacts-content, 
+    .contacts-image {
+        flex: 1;
+    }
+   
+    
 }
