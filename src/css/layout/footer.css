@@ -1,7 +1,7 @@
 /* Styles for Mobile devices */
 .footer {
-    padding: 80px 16px;
-    background: var(--color-scheme-5-background);
+    padding: 80px 0;
+    background: #0A2300;
 }
 
 .footer-container {
@@ -9,9 +9,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 24px;
 }
 
-.site-nav-list {
+.footer-site-nav-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,19 +39,40 @@
 }
 
 .copyright-text {
-    font-weight: 400;
+    width: 100%;
+    padding-top: 32px;
+    border-top: 1px solid #5E8A4D;
+    text-align: center;
+}
+
+.copyright-text-p {
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.5;
-    color: var(--color-scheme-5-text);
-    border-top: 1px solid var(--color-scheme-5-border);
+    color: #ffffff;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-
+    .footer-site-nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
 }
+
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+     .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    .copyright-text {
+        width: 100%;
+    }
 }
