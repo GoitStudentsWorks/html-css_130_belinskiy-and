@@ -34,21 +34,20 @@
   margin-bottom: 16px;
 }
 
-.hero-link {
+.button.white {
   display: block;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #010400;
 
-  border: 1px solid transparent;
+  max-width: 343px;
+
+  border: 1px solid var(--color-white);
   border-radius: 6px;
-  background-color: var(--link-white-color);
 
+  text-align: center;
   padding-top: 8px;
   padding-bottom: 4px;
-  text-align: center;
 }
 
 /* Styles for Tablet devices */
@@ -65,11 +64,11 @@
     max-width: 611px;
   }
 
-  .hero-link {
-    display: inline-flex;
+  .button.white {
     justify-content: center;
     align-items: center;
-    padding: 6px 82px;
+    max-width: 254px;
+    padding: 6px;
   }
 }
 
@@ -90,6 +89,8 @@
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(/img/hero/hero-desk-bg@1x.jpg);
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .hero-main-title {
@@ -100,9 +101,10 @@
     max-width: 646px;
   }
 
-  .hero-link {
+  .button.white {
     text-align: center;
-    padding: 6px 54px;
+
+    max-width: 199px;
   }
 }
 
