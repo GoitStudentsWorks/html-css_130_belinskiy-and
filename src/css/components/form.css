@@ -6,9 +6,9 @@
 }
 
 .contacts-form-inp {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+display: flex;
+flex-direction: column;
+
 }
 
 .contacts-form-label {
@@ -16,6 +16,7 @@
   color: var(--main-text-color);
   font-weight: 400;
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .inp {
@@ -110,3 +111,16 @@
   cursor: pointer;
 }
 
+@media only screen and (min-width: 768px) {
+  .contacts-form-button {
+    width: 343px;
+    min-width: 343px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contacts-form-button {
+    width: 198px;
+    min-width: 198px;
+  }
+}
