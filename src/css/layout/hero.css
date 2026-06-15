@@ -36,9 +36,8 @@
 
 .hero-button {
   display: block;
-  max-width: 343px;
+  width: 100%;
   text-align: center;
-  padding: 8px 0;
 }
 
 /* Styles for Tablet devices */
@@ -55,11 +54,8 @@
     max-width: 611px;
   }
 
-  .button.white {
-    justify-content: center;
-    align-items: center;
-    max-width: 254px;
-    padding: 6px;
+  .hero-button {
+    width: 254px;
   }
 }
 
@@ -92,7 +88,7 @@
     max-width: 646px;
   }
 
-  .button.white {
+  .hero-button {
     text-align: center;
 
     max-width: 199px;
