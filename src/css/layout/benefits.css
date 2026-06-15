@@ -9,6 +9,11 @@
   align-items: center;
   flex-direction: column;
 }
+
+.benefits-img {
+  margin-bottom: 24px;
+}
+
 .benefits-list {
   display: flex;
   align-items: flex-start;
@@ -18,14 +23,10 @@
   padding: 0;
 }
 .benefits-container-title {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 24px;
-  padding: 24px 0 32px;
+  margin-bottom: 32px;
 }
 .benefits-title {
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 36px;
 
@@ -49,25 +50,16 @@
   justify-content: flex-start;
   flex-direction: row;
   gap: 32px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  min-height: 880px;
-}
-.benefits-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 16px;
-}
-.benefits-icons {
+  margin-bottom: 8px;
 }
 .benefits-svg {
   fill: var(--secondary-text-color);
   width: 48px;
   height: 48px;
+  margin-bottom: 16px;
 }
 .benefits-item-title {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 20px;
 
@@ -77,10 +69,20 @@
 
   color: var(--secondary-text-color);
 }
+.benefits-text-list {
+  font-weight: 400;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  color: #fff;
+}
 
 .benefits-img img {
   width: 343px;
   height: 487px;
+  object-fit: cover;
+  object-position: center;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -88,8 +90,69 @@
     width: 704px;
     height: 487px;
   }
+
+  .benefits-list {
+    gap: 16px;
+  }
+
+  .benefits-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    width: 344px;
+    min-width: 320px;
+  }
+  .benefits-svg {
+    margin-bottom: 0;
+  }
+  .benefits-item-title {
+    margin-bottom: 0;
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+  .benefits-img img {
+    width: 644px;
+    height: 669px;
+  }
+
+  .benefits-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  .benefits-container-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    width: 644px;
+  }
+  .benefits-title {
+    margin-bottom: 0;
+  }
+  .benefits-img {
+    min-width: 644px;
+  }
+  .benefits-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .benefits-item {
+    width: 310px;
+    min-width: 200px;
+  }
+  .benefits-title {
+    font-weight: 400;
+    font-size: 48px;
+  }
 }
