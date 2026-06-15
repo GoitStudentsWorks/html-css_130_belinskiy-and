@@ -93,6 +93,8 @@ body:has(.mobile-menu-wrapper.is-open) {
 .mobile-menu-button {
   display: block;
   text-align: center;
+  max-width: 343px;
+  margin: 0 auto;
 }
 
 /* Styles for Tablet devices */
