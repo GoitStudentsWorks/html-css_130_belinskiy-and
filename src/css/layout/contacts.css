@@ -8,17 +8,13 @@
     margin-bottom: 16px;
 }
 
-.contacts-title {
-    margin-bottom: 24px;
-}
 
 .contacts-subtitle {
     margin-bottom: 32px;
 }
 
 .contacts-address {
-    padding: 8px 0;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 .contacts-address-item:not(:last-child) {

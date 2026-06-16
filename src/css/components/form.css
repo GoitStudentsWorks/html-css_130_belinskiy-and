@@ -52,7 +52,6 @@ flex-direction: column;
 .form-input-text-error,
 .text-invalid {
   display: none;
-  margin-top: 4px;
   color: #a00000;
   font-size: 12px;
   line-height: 1.5;
@@ -107,7 +106,7 @@ flex-direction: column;
 .contacts-form-button {
   width: 100%;
   min-height: 36px;
-  padding: 6px 12px;
+  padding: 8px 12px;
   cursor: pointer;
 }
 
@@ -115,6 +114,7 @@ flex-direction: column;
   .contacts-form-button {
     width: 343px;
     min-width: 343px;
+      padding: 6px 12px;
   }
 }
 
@@ -122,5 +122,6 @@ flex-direction: column;
   .contacts-form-button {
     width: 198px;
     min-width: 198px;
+    padding: 6px 12px;
   }
 }
