@@ -107,8 +107,12 @@
     .footer-top {
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         margin-bottom: 80px;
+    }
+
+    .site-logo {
+        margin-bottom: 0;
     }
 
     .footer-logo-link {
