@@ -1,11 +1,49 @@
 /* Styles for Mobile devices */
 .mission-section {
+    background-color: var(--four-background-color)
+}
+
+.mission-text-block {
+    margin-bottom: 32px;
+}
+
+.mission-text-title 
+{
+    color: var(--secondary-title-color);
+}
+  
+.mission-subtitle {
+    color: var(--secondary-text-color);
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+
+.mission-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission-text-block {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.mission-text-title,
+.mission-subtitle {
+    width: calc((100% - 24px)/ 2); 
+}
+
+.section-heading:not(:last-child){
+    margin-bottom: 0;
+}
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+
+.mission-text-block {
+    margin-bottom: 80px;
+}
 }
