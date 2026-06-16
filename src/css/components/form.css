@@ -1,0 +1,127 @@
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.contacts-form-inp {
+display: flex;
+flex-direction: column;
+
+}
+
+.contacts-form-label {
+  display: block;
+  color: var(--main-text-color);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.inp {
+  height: 40px;
+  padding: 8px 0;
+  border: 0;
+  border-bottom: 1px solid rgba(1, 4, 0, 0.15);
+  outline: none;
+  background-color: var(--first-background-color);
+  color: var(--main-text-color);
+  transition: border-color var(--transition-function), color var(--transition-function);
+}
+
+.inp::placeholder {
+  color: rgba(1, 4, 0, 0.6);
+}
+
+.inp:focus {
+  border-color: var(--second-background-color);
+  color: var(--main-text-color);
+}
+
+.inp:not(:placeholder-shown):valid {
+  border-color: var(--second-background-color);
+  color: var(--main-text-color);
+}
+
+.inp:not(:placeholder-shown):invalid {
+  border-color: #a00000;
+  color: #a00000;
+}
+
+.form-input-text-error,
+.text-invalid {
+  display: none;
+  color: #a00000;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.inp:not(:placeholder-shown):invalid + .form-input-text-error,
+.inp:not(:placeholder-shown):invalid + .text-invalid {
+  display: block;
+}
+
+.contacts-textarea {
+  min-height: 166px;
+  padding: 12px;
+  border: 1px solid rgba(1, 4, 0, 0.15);
+  outline: none;
+  resize: none;
+  background-color: var(--first-background-color);
+  color: var(--main-text-color);
+  transition: border-color var(--transition-function), color var(--transition-function);
+}
+
+.contacts-textarea::placeholder {
+  color: rgba(1, 4, 0, 0.6);
+}
+
+.contacts-textarea:focus {
+  border-color: var(--second-background-color);
+}
+
+.contacts-textarea:not(:placeholder-shown):valid {
+  border-color: var(--second-background-color);
+  color: var(--main-text-color);
+}
+
+.contacts-textarea:not(:placeholder-shown):invalid {
+  border-color: #a00000;
+  color: #a00000;
+}
+
+.contacts-error-text {
+  display: none;
+  margin-top: 4px;
+  color: #a00000;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.contacts-textarea:not(:placeholder-shown):invalid + .contacts-error-text {
+  display: block;
+}
+
+.contacts-form-button {
+  width: 100%;
+  min-height: 36px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-form-button {
+    width: 343px;
+    min-width: 343px;
+      padding: 6px 12px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contacts-form-button {
+    width: 198px;
+    min-width: 198px;
+    padding: 6px 12px;
+  }
+}
