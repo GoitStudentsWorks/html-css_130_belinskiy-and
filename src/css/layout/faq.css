@@ -1,14 +1,133 @@
 /* Styles for Mobile devices */
 .faq-section {
+  background-color: var(--four-background-color);
+  color: var(--secondary-text-color);
 }
 
-.faq-container {
+.faq-header {
+  margin-bottom: 16px;
+}
+
+.section-heading.faq-heading {
+  color: var(--secondary-title-color);
+  margin-bottom: 8px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--secondary-text-color);
+  user-select: none;
+}
+
+.faq-question-text {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.faq-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 17px;
+  height: 10px;
+}
+
+.faq-icon svg {
+  display: block;
+  color: var(--secondary-text-color);
+  transition: opacity var(--transition-function);
+}
+
+.faq-icon-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.faq-details.is-open .faq-icon-down {
+  opacity: 0;
+}
+
+.faq-details.is-open .faq-icon-up {
+  opacity: 1;
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.faq-details.is-open .faq-answer {
+  display: block;
+  animation: faq-answer-in 0.2s ease-out;
+}
+
+@keyframes faq-answer-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .faq-question {
+    font-size: 18px;
+    padding: 24px 0;
+  }
+
+  .faq-answer {
+    font-size: 17px;
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
+  .faq-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 96px;
+    align-items: flex-start;
+  }
+
+  .faq-header {
+    margin-bottom: 0;
+    flex: 0 0 380px;
+  }
+
+  .faq-list {
+    flex: 1;
+  }
+
+  .faq-question {
+    font-size: 20px;
+  }
 }
