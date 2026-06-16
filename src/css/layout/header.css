@@ -1,7 +1,7 @@
 /* Styles for Mobile devices */
 .header {
   position: relative;
-  padding: 6px 10000000000000000;
+  padding: 6px 0;
   background-color: var(--header-background-color);
 }
 
