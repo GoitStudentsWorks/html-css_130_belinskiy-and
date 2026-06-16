@@ -3,7 +3,6 @@
   position: relative;
   padding: 6px 0;
   background-color: var(--header-background-color);
-  /* z-index: 200; */
 }
 
 .header-content {
