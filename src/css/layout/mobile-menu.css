@@ -110,6 +110,15 @@ body:has(.mobile-menu-wrapper.is-open) {
     height: 100vh;
     min-width: 286px;
     max-width: calc(50% - 98px);
+
+    transform: translateX(100%);
+    transition:
+      transform var(--transition-function),
+      visibility var(--transition-function);
+  }
+
+  .mobile-menu-wrapper.is-open .mobile-menu {
+    transform: translateX(0);
   }
 
   .mobile-menu-content {
