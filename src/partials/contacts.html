@@ -1,11 +1,13 @@
 <section class="contacts-section" id="contacts">
   <div class="container contacts-container">
     <div class="contacts-content">
-      <hgroup class="section-title">
+      <div class="section-title">
         <h3 class="contacts-pretitle section-pretitle">Contacts</h3>
         <h2 class="contacts-heading section-heading">Get in Touch</h2>
-        <p class="contacts-subtitle section-subtitle">We'd love to hear from you anytime!</p>
-      </hgroup>
+        <p class="contacts-subtitle section-subtitle">
+          We'd love to hear from you anytime!
+        </p>
+      </div>
 
       <address class="contacts-address">
         <ul class="contacts-address-list">
@@ -13,15 +15,26 @@
             <svg class="contacts-icon" width="24" height="24">
               <use href=" /img/sprite.svg#email-icon"></use>
             </svg>
-            <a class="contacts-address-link" href="mailto:hello@organicstore.com">hello@organicstore.com</a>
+            <a
+              class="contacts-address-link"
+              href="mailto:hello@organicstore.com"
+              >hello@organicstore.com</a
+            >
           </li>
 
           <li class="contacts-address-item">
-            <svg class="contacts-icon contacts-icon-phone" width="24" height="24" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="contacts-icon contacts-icon-phone"
+              width="24"
+              height="24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <use href="/img/sprite.svg#phone-icon"></use>
             </svg>
-            <a class="contacts-address-link" href="tel:+15553291024">+1 (555) 329-1024</a>
+            <a class="contacts-address-link" href="tel:+15553291024"
+              >+1 (555) 329-1024</a
+            >
           </li>
         </ul>
       </address>
@@ -29,32 +42,61 @@
       <form class="contacts-form" action="#">
         <div class="contacts-form-inp">
           <label class="contacts-form-label" for="name">Name</label>
-          <input class="inp" type="text" id="name" name="name" placeholder="Sarah" pattern="^[a-zA-Z\s\.]{5,64}$"
-            required>
+          <input
+            class="inp"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            required
+          />
           <div class="form-input-text-error">Error text</div>
         </div>
 
         <div class="contacts-form-inp">
           <label class="contacts-form-label" for="email">Email</label>
-          <input class="inp" type="email" id="email" name="email" placeholder="hello@organic.com"
-            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+          <input
+            class="inp"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="hello@organic.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            required
+          />
           <div class="text-invalid">Error text</div>
         </div>
 
         <div class="contacts-form-inp">
           <label class="contacts-form-label" for="message">Message</label>
-          <textarea class="contacts-textarea" id="message" name="message" placeholder="Type your message..."
-            maxlength="500" required></textarea>
+          <textarea
+            class="contacts-textarea"
+            id="message"
+            name="message"
+            placeholder="Type your message..."
+            maxlength="500"
+            required
+          ></textarea>
           <div class="contacts-error-text">Error text</div>
         </div>
 
-        <button class="button contacts-form-button" type="submit">Submit</button>
+        <button class="button contacts-form-button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
 
     <div class="contacts-image">
-      <img class="contacts-photo" srcset="/img/contacts/team-smiling.jpg 1x, /img/contacts/team-smiling@2x.jpg 2x"
-        src="/img/contacts/team-smiling.jpg" alt="A small, friendly team of people smiling">
+      <img
+        class="contacts-photo"
+        srcset="
+          /img/contacts/team-smiling.jpg    1x,
+          /img/contacts/team-smiling@2x.jpg 2x
+        "
+        src="/img/contacts/team-smiling.jpg"
+        alt="A small, friendly team of people smiling"
+      />
     </div>
   </div>
 </section>
