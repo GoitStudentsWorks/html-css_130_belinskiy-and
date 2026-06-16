@@ -78,6 +78,11 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    .footer-social-list-svg {
+        width: 24px;
+        height: 24px;
+    }
     
     .footer-logo-link {
         width: 162px;
@@ -124,6 +129,5 @@
 
     .copyright-text {
         padding-top: 32px;
-        
     }
 }
