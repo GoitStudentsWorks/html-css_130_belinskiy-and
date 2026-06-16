@@ -1,16 +1,16 @@
 /* Styles for Mobile devices */
 .faq-section {
-  background-color: #5E8A4D;
+  background-color: var(--four-background-color);
   color: var(--secondary-text-color);
 }
 
 .faq-header {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
-.faq-heading {
+.section-heading.faq-heading {
   color: var(--secondary-title-color);
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .faq-item {
@@ -41,6 +41,8 @@
 
 .faq-question-text {
   flex: 1;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .faq-icon {
@@ -97,10 +99,6 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .faq-header {
-    margin-bottom: 48px;
-  }
-
   .faq-question {
     font-size: 18px;
     padding: 24px 0;
