@@ -34,7 +34,7 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--secondary-text-color);
   user-select: none;
 }
@@ -43,6 +43,7 @@
   flex: 1;
   font-size: 18px;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .faq-icon {
@@ -102,10 +103,6 @@
   .faq-question {
     font-size: 18px;
     padding: 24px 0;
-  }
-
-  .faq-answer {
-    font-size: 17px;
   }
 }
 

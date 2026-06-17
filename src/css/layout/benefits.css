@@ -19,7 +19,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
   padding: 0;
 }
 .benefits-container-title {
