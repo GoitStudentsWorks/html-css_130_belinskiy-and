@@ -6,7 +6,7 @@
 
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(/img/hero/hero-mob-bg@1x.jpg);
+    url(/img/hero/hero-mob-bg@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,7 +16,7 @@
   .hero-section {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/hero/hero-mob-bg@2x.jpg);
+      url(/img/hero/hero-mob-bg@2x.webp);
   }
 }
 
@@ -47,7 +47,7 @@
     padding-bottom: 234px;
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/hero/hero-tab-bg@1x.jpg);
+      url(/img/hero/hero-tab-bg@1x.webp);
   }
 
   .hero-subtitle {
@@ -63,7 +63,7 @@
   .hero-section {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/hero/hero-tab-bg@2x.jpg);
+      url(/img/hero/hero-tab-bg@2x.webp);
   }
 }
 
@@ -75,7 +75,7 @@
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/hero/hero-desk-bg@1x.jpg);
+      url(/img/hero/hero-desk-bg@1x.webp);
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -99,6 +99,6 @@
   .hero-section {
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/img/hero/hero-desk-bg@2x.jpg);
+      url(/img/hero/hero-desk-bg@2x.webp);
   }
 }
